@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Analisador de Números</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Número Único (entre 1 e 100):
+                <input type="number" onkeypress="enterPress(event)" name="txtNumero" id="txtNumero" min="0" max="100" oninput="corta()">
+                <input type="button" value="Acicionar" onclick="add()">
+            </p>
+            <p>
+                <select name="lstValores" id="lstValores" size="6" class=""></select>
+                <br>
+                <input type="button" value="Finalizar" onclick="finalizar()">
+                <input type="button" value="Zerar Lista" onclick="zerar()">
+            </p>
+        <div id="res">
+            
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Rodrigo Bedutti da Silva</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
